@@ -126,18 +126,39 @@ footer {
 /* Adventures grid page CSS */
 /* ================================== */
 
-.adventure-card {
-  /* TODO: MODULE_ADVENTURES_GRID */
-  /* 1. Fill in the required properties. */
+  .adventure-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    cursor: pointer;
+    flex-direction: column;
+    height: 260px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
 }
 .adventure-card img {
-  /* TODO: MODULE_ADVENTURES_GRID */
-  /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s all;
 }
 .adventure-card img:hover {
-  /* TODO: MODULE_ADVENTURES_GRID */
-  /* 1. Fill in the required properties. */
+  filter: brightness(50%);
 }
+.card-body{
+  column-gap: 5em;
+}
+.card-title{
+  margin-right: auto;
+}
+
+.card-text{
+  margin-left: auto;;
+}
+
+
 
 /* ================================== */
 /* Adventure details page CSS */
